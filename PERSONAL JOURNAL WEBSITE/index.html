@@ -27,34 +27,39 @@
 		<header class="header">
 			<h1 class="outfit">JournalHub 📝</h1>
 		</header>
-
+		
 		<!-- Past Entries -->
-		<main class="container">
-			<h3 class="poppins">Past entries:</h3>
-			<div class="entries">
-				<div class="entry-card">
-					<span class="date poppins">09:30am &nbsp; 02/09/2025</span>
-					<h3 class="outfit">My first journal entry</h3>
-				</div>
-				<div class="entry-card">
-					<span class="date poppins">09:30am &nbsp; 02/09/2025</span>
-					<h3 class="outfit">My second journal entry</h3>
-				</div>
-				<div class="entry-card">
-					<span class="date poppins">09:30am &nbsp; 02/09/2025</span>
-					<h3 class="outfit">My third journal entry</h3>
-				</div>
-				<div class="entry-card">
-					<span class="date poppins">09:30am &nbsp; 02/09/2025</span>
-					<h3 class="outfit">My fourth journal entry</h3>
-				</div>
-			</div>
-		</main>
+		<div class="journalContainer">
+			<div class="journal">
+			<main class="container">
+				<div class="entries">
+					<div class="entry-card">
+						<span class="date poppins">09:30am &nbsp; 02/09/2025</span>
+						<h3 class="outfit">My first journal entry</h3>
+					</div>
 
-		<!-- Floating Button & Message -->
-		<div class="floating">
-			<p class="poppins">Hi👋, write something new today:</p>
-			<button class="add-btn" id="openModal">+</button>
+					<div class="entry-card">
+						<span class="date poppins">09:30am &nbsp; 02/09/2025</span>
+						<h3 class="outfit">My second journal entry</h3>
+					</div>
+
+					<div class="entry-card">
+						<span class="date poppins">09:30am &nbsp; 02/09/2025</span>
+						<h3 class="outfit">My third journal entry</h3>
+					</div>
+					<div class="entry-card">
+						<span class="date poppins">09:30am &nbsp; 02/09/2025</span>
+						<h3 class="outfit">My fourth journal entry</h3>
+					</div>
+				</div>
+			</main>
+
+			<!-- Floating Button & Message -->
+			<div class="floating">
+				<p class="poppins">Hi👋, write something new today:</p>
+				<button class="add-btn" id="openModal">+</button>
+			</div>
+		</div>
 		</div>
 
 		<!-- New Journal Modal -->
@@ -62,12 +67,23 @@
 			<div class="modal-content">
 				<span class="close-btn" id="closeModal">&times;</span>
 				<h2>New Entry</h2>
-				<input type="text" name="title" id="" placeholder="Title" />
-				<textarea name="" id="" placeholder="Start writing"></textarea>
-				<p>[Form wireframe goes here]</p>
+				<input
+					type="text"
+					class="outfit"
+					name="title"
+					id="entryTitle"
+					placeholder="Title"
+				/>
+				<textarea
+					name="content"
+					class="poppins"
+					id="entryContent"
+					placeholder="Start writing"
+				></textarea>
+				<!-- <p>[Form wireframe goes here]</p> -->
 				<div class="modalBtn">
-					<a href="" class="cancel-btn" id="cancelModal">Cancel</a>
-					<a href="" class="save-btn" id="saveModal">Save</a>
+					<a href="" class="cancel-btn poppins" id="cancelModal">Cancel</a>
+					<a href="" class="save-btn poppins" id="saveModal">Save</a>
 				</div>
 			</div>
 		</div>

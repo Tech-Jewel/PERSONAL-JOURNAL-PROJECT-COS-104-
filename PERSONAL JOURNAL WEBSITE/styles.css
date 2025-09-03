@@ -39,17 +39,7 @@ body {
 }
 
 /* Entries grid */
-.journalContainer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 80vh;
-	width: 100%;
-}
-.journal {
-	width: 100%;
-	max-width: 900px;
-}
+
 .entries {
 	width: 100%;
 	display: flex;
@@ -86,12 +76,10 @@ body {
 
 /* Floating button + message */
 .floating {
-	/* position: fixed;
-  right: 3rem;
-  bottom: 3rem; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
+  margin: 50px 0px;
 	gap: 0.8rem;
 }
 
@@ -241,6 +229,7 @@ body {
 	border-radius: 8px;
 	color: #555;
 	transition: background-color 0.2s, color 0.2s;
+  cursor: pointer;
 }
 .modalBtn .cancel-btn:hover {
 	background-color: #f0f0f0;
@@ -254,6 +243,7 @@ body {
 	background-color: #7b61ff;
 	color: white;
 	transition: background-color 0.2s;
+  cursor: pointer;
 }
 .modalBtn .save-btn:hover {
 	background-color: #6847f5;

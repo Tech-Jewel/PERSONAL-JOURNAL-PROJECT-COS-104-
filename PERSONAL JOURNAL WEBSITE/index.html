@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JournalHub</title>
+		<!-- CSS stylesheet -->
+		<link rel="stylesheet" href="../PERSONAL JOURNAL WEBSITE/styles.css" />
+		<!-- Outfit font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Poppins -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<!-- Header -->
+		<header class="header">
+			<h1 class="outfit">JournalHub 📝</h1>
+		</header>
+
+		<!-- Past Entries -->
+		<main class="container">
+			<h3 class="poppins">Past entries:</h3>
+			<div class="entries">
+				<div class="entry-card">
+					<span class="date poppins">09:30am &nbsp; 02/09/2025</span>
+					<h3 class="outfit">My first journal entry</h3>
+				</div>
+				<div class="entry-card">
+					<span class="date poppins">09:30am &nbsp; 02/09/2025</span>
+					<h3 class="outfit">My second journal entry</h3>
+				</div>
+				<div class="entry-card">
+					<span class="date poppins">09:30am &nbsp; 02/09/2025</span>
+					<h3 class="outfit">My third journal entry</h3>
+				</div>
+				<div class="entry-card">
+					<span class="date poppins">09:30am &nbsp; 02/09/2025</span>
+					<h3 class="outfit">My fourth journal entry</h3>
+				</div>
+			</div>
+		</main>
+
+		<!-- Floating Button & Message -->
+		<div class="floating">
+			<p class="poppins">Hi👋, write something new today:</p>
+			<button class="add-btn" id="openModal">+</button>
+		</div>
+
+		<!-- New Journal Modal -->
+		<div class="modal" id="modal">
+			<div class="modal-content">
+				<span class="close-btn" id="closeModal">&times;</span>
+				<h2>New Entry</h2>
+				<input type="text" name="title" id="" placeholder="Title" />
+				<textarea name="" id="" placeholder="Start writing"></textarea>
+				<p>[Form wireframe goes here]</p>
+				<div class="modalBtn">
+					<a href="" class="cancel-btn" id="cancelModal">Cancel</a>
+					<a href="" class="save-btn" id="saveModal">Save</a>
+				</div>
+			</div>
+		</div>
+
+		<script src="../PERSONAL JOURNAL WEBSITE/script.js"></script>
+	</body>
+</html>
